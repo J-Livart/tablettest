@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.item{ background: #eee;
+  border-radius: 8px;
+  padding: 20px;}
+
+.item.box1 { height:100px; }
+.item.box2 { height:200px; }
+.item.box3 { height:300px; }
+.item.box4 { height:400px; }
+.item.box5 { height:500px; }
+
+@media (min-width: 690px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

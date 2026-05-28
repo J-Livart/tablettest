@@ -1,0 +1,27 @@
+.grid {
+  width: 100%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: calc(50% - 8px);
+}
+
+.grid-item {
+  margin-bottom: 16px;
+  background: #eee;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.grid-item.box1 { height:100px; }
+.grid-item.box2 { height:200px; }
+.grid-item.box3 { height:300px; }
+.grid-item.box4 { height:400px; }
+.grid-item.box5 { height:500px; }
+
+@media (max-width: 689px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
